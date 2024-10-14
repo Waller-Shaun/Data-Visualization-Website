@@ -1,60 +1,66 @@
 # Data-Visualization-Website
-This is the operation guide for the project.
 
+This document provides an operation guide for the project.
 
-# Project introduction
-The project can crawl Chinese national data and automatically process it into MySQL. Flask framework is used to build web pages to realize data visualization.
+**Notice: This project has been discontinued and is no longer actively maintained.**
 
-# Environmental dependence
-Python 3.0
-MySQL 8.0
+## Project Introduction
 
-# Directory structure description
+This project crawls Chinese national data and automatically processes it into MySQL. The Flask framework is used to build web pages for data visualization.
 
-│  list.txt
-│  README.txt
+## Environment Dependencies
+
+- Python 3.x
+- MySQL 8.0
+
+## Directory Structure Description
+
+```
+scss复制代码│  list.txt  
+│  README.txt  
 │  
-├─back
-│  ├─  最终代码.py   //Back-end crawler startup file
+├─ back  
+│  ├─ final_code.py   // Back-end crawler startup file  
 │  │  
-│  ├─.idea   //IDEA configuration file
-│  │  │  
-│  │  └─.......
+│  ├─ .idea   // IDEA configuration files  
+│  │  └─ ...  
 │  │          
-│  ├─Lib  //Static library file
-│  │  └─.......
+│  ├─ Lib  // Static library files  
+│  │  └─ ...  
 │  │              
-│  └─Scripts   //Script file
-│   	└─.......
+│  └─ Scripts   // Script files  
+│      └─ ...  
 │          
-├─database
-│ 	├─house.sql  //Project database
+├─ database  
+│  └─ house.sql  // Project database  
 │      
-└─front
-    │  app.py  //Front-end project startup file
+└─ front  
+    │  app.py  // Front-end project startup file  
     │  
-    ├─.idea   //IDEA configuration file
-    │  └─.......
+    ├─ .idea   // IDEA configuration files  
+    │  └─ ...  
     │          
-    ├─data  //excel table of data for each province
-    │      
-    ├─static //Static file
-    │  └─assets
-    │      ├─css   //Web page cascading style Sheets
-    │      	  └─.......
-    │      ├─font  //Font file required for web page
-    │          └─.......
-    │      ├─img   //Page involving pictures
-    │          └─.......
-    │      └─js    //Web javascript
-    │          └─.......            
-    ├─templates   //Web page
-    │
-    └─__pycache__
+    ├─ data  // Excel files containing data for each province  
+    │  
+    ├─ static // Static files  
+    │  └─ assets  
+    │      ├─ css   // Web page stylesheets  
+    │      │  └─ ...  
+    │      ├─ font  // Web page fonts  
+    │      │  └─ ...  
+    │      ├─ img   // Web page images  
+    │      │  └─ ...  
+    │      └─ js    // Web page JavaScript files  
+    │          └─ ...            
+    ├─ templates   // Web page templates  
+    └─ __pycache__
+```
 
-# Instructions
-    1.Data crawled by the back end will be imported directly into the "house" library, so make sure you have created "house" in the target database.
-    2.Ensure that the data has been saved to the local database. Otherwise, an error of 500 will be reported
+## Instructions
 
-           
-# Version content is updated
+1. The data crawled by the back-end will be imported directly into the `house` database. Ensure that the "house" library is created in the target database before running the project.
+2. Confirm that the data is saved to the local database, otherwise, a 500 error will occur.
+
+## Version Updates
+
+Updates to the project will be listed here.
